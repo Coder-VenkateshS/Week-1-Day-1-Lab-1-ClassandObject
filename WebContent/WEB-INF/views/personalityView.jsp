@@ -9,11 +9,14 @@
 </head>
 <body>
 <script type="text/javascript" type="module" src="/Week-1-Day-1-Lab-1/appscript/script.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
+
 
 <header class="header">
-<img class="logo" src="/Week-1-Day-1-Lab-1/assets/Logo.svg" alt="logo"></img>
+<div class="header-text">THE 50 SECONDS BRAIN TEST</div>
+<div class="header-text-small">Which side does your brain belongs to? Time to find out!</div>
+<img class="logo" src="./assets/logoimage.svg" alt="logo"></img>
 </header>
+
 <main class="main"><h1>A simple game to identify your personality</h1> </main>
 <section class="quiz">
 <form id="myform" action="/Week-1-Day-1-Lab-1/personality" method="post">

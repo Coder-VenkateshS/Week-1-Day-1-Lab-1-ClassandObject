@@ -42,7 +42,7 @@ public class PersonalityViewController extends HttpServlet {
 		LocalDate dob=null;
 		dob=LocalDate.parse(date);  
 		
-		System.out.println(dob);
+		
 		int q1=Integer.parseInt(request.getParameter("answer1"));
 		int q2=Integer.parseInt(request.getParameter("answer2"));
 		int q3=Integer.parseInt(request.getParameter("answer3"));
@@ -53,6 +53,9 @@ public class PersonalityViewController extends HttpServlet {
 		int q8=Integer.parseInt(request.getParameter("answer8"));
 		int q9=Integer.parseInt(request.getParameter("answer9"));
 		int q10=Integer.parseInt(request.getParameter("answer10"));
+		
+		// Create an object for Person class
+		
 		Person person=new Person(name,gender,dob,q1,q2,q3,q4,q5,q6,q7,q8,q9,q10);
 		PersonalityCalculator personalitycalc=new PersonalityCalculator();
 		
@@ -75,6 +78,7 @@ public class PersonalityViewController extends HttpServlet {
 		String astro=personalitycalc.findSign(person);
 		String match=personalitycalc.findYourMatch(person);
 		Period age=personalitycalc.ageCalculator(person);
+		
 		if(!message.equals("")){
 			RequestDispatcher rd=this.getServletContext().getRequestDispatcher("/WEB-INF/views/outputView.jsp");
 			request.setAttribute("person", person);

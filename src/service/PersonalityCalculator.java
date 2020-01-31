@@ -10,7 +10,7 @@ public class PersonalityCalculator {
 public String toString(Person person) {
 	return "Name:"+person.getName()+"\nGender:"+person.getGender()+"\nDOB:"+person.getDob();
 }
-
+//create a meth
 public String findPersonality(Person person) {
 	int sum=0;
 	sum=person.getQ1()+person.getQ2()+person.getQ3()+person.getQ4()+person.getQ5()+person.getQ6()+person.getQ7()+person.getQ8()+person.getQ9()+person.getQ10();
@@ -136,59 +136,59 @@ public String findYourMatch(Person person) {
 	String match=findSign(person);
 	String yourPartner="";
 	if(match.equalsIgnoreCase("Aries")) {
-		//yourPartner="Aquarius";
-		yourPartner="Chimpanzee";
+		yourPartner="Aquarius";
+		
 	}
 	else if(match.equalsIgnoreCase("Taurus")) {
-		//yourPartner="Cancer";
-		yourPartner="Orangutan";
+		yourPartner="Cancer";
+		
 	}
 	else if(match.equalsIgnoreCase("Gemini")) {
-		//yourPartner="Aquarius";
-		yourPartner="Monkey";
+		yourPartner="Aquarius";
+		
 	}
 	else if(match.equalsIgnoreCase("Cancer")) {
-		//yourPartner="Pisces";
-		yourPartner="Pig";
+		yourPartner="Pisces";
+		
 	}
 	else if(match.equalsIgnoreCase("Leo")) {
-		//yourPartner="Sagittarius";
-		yourPartner="Sloth bear";
+		yourPartner="Sagittarius";
+		
 	}
 	else if(match.equalsIgnoreCase("Virgo")) {
-		//yourPartner="Taurus";
-		yourPartner="Macaque";
+		yourPartner="Taurus";
+		
 	}
 	else if(match.equalsIgnoreCase("Libra")) {
-		//yourPartner="Gemini";
-		yourPartner="Gorilla";
+		yourPartner="Gemini";
+		
 	}
 	else if(match.equalsIgnoreCase("Scorpio")) {
-		//yourPartner="Cancer";
-		yourPartner="Orangutan";
+		yourPartner="Cancer";
+		
 	}
 	else if(match.equalsIgnoreCase("Sagittarius")) {
-		//yourPartner="Aries";
-		yourPartner="Baboon";
+		yourPartner="Aries";
+		
 	}
 	else if(match.equalsIgnoreCase("Capricorn")) {
-		//yourPartner="Taurus";
-		yourPartner="Baboon";
+		yourPartner="Taurus";
+		
 	}
 	else if(match.equalsIgnoreCase("Aquarius")) {
-		//yourPartner="Gemini";
-		yourPartner="Chimpanzee";
+		yourPartner="Gemini";
+		
 	}
 	else if(match.equalsIgnoreCase("Pisces")) {
-		//yourPartner="Scorpio";
-		yourPartner="Baboon";
+		yourPartner="Scorpio";
+		
 	}
 	return yourPartner;
 }
 public Period ageCalculator(Person person) {
+	
 	LocalDate today=LocalDate.now();
 	Period age=Period.between(person.getDob(), today);
-	
 	return age;
 }
 }

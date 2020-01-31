@@ -17,6 +17,7 @@ public class Person {
 	private int q8;
 	private int q9;
 	private int q10;
+	
 	public Person(String name, String gender, LocalDate dob, int q1, int q2, int q3, int q4, int q5,
 			int q6, int q7, int q8, int q9, int q10) {
 	
